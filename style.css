@@ -1,0 +1,227 @@
+.body{
+   background-color: #E2E7EC;
+}
+
+*{
+   margin: 0;
+   padding: 0;   
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   box-sizing: border-box;
+   width: 100%;
+}
+
+.container{
+   width: 1120px;
+   margin: 0 auto;
+}
+
+/* Сетка блоков */
+
+.header-grid{
+   display: grid;
+   grid-template-columns: repeat(4, 360px);
+   grid-template-rows: repeat(2, 540px);
+   grid-gap: 20px;
+}
+
+/* Секция фантастика */
+
+.fantastic{
+   grid-column: 1 / 3;
+   grid-row: 1 / 1;
+   background-image: url(image/fantastic-image.png);
+   padding: 48px;
+   box-sizing: border-box;
+}
+
+.fantastic-date{
+   color: rgba(255, 255, 255, 0.5);
+   font-size: 13px;
+   margin-top: 332px;
+   text-transform: uppercase;
+}
+
+.fantastic-title{
+   color: #fff;
+   font-size: 34px;
+   margin-top: 16px;
+}
+
+/* Секция дизайн */
+
+.design{
+   grid-column: 3 / 4;
+   grid-row: 1 / 1;
+}
+
+.design-image{
+   height: 250px;
+}
+
+.design-date{
+   color: #818181;
+   font-size: 13px;
+   margin-top: 24px;
+   margin-left: 24px;
+   text-transform: uppercase;
+}
+
+.design-title{
+   color: #1D1D1D;
+   font-size: 24px;
+   margin-top: 16px;
+   margin-left: 24px;
+}
+
+/* Секция веб сайт */
+
+.website{
+   grid-column: 1 / 2;
+   grid-row: 2 / 3;
+}
+
+.website-image{
+   height: 250px;
+}
+
+.website-date{
+   color: #818181;
+   font-size: 13px;
+   margin-top: 24px;
+   margin-left: 24px;
+   text-transform: uppercase;
+}
+
+.website-title{
+   color: #1D1D1D;
+   font-size: 24px;
+   margin-top: 16px;
+   margin-left: 24px;
+}
+
+/* Секция фриланс */
+
+.freelance{
+   grid-column: 2 / 3;
+   grid-row: 2 / 3;
+}
+
+.freelance-image{
+   height: 250px;
+}
+
+.freelance-date{
+   color: #818181;
+   font-size: 13px;
+   margin-top: 24px;
+   margin-left: 24px;
+   text-transform: uppercase;
+}
+
+.freelance-title{
+   color: #1D1D1D;
+   font-size: 24px;
+   margin-top: 16px;
+   margin-left: 24px;
+}
+
+/* Секция фотографии */
+
+.photography{
+   grid-column: 3 / 4;
+   grid-row: 2 / 3;
+}
+
+.photography-image{
+   height: 250px;
+}
+
+.photography-date{
+   color: #818181;
+   font-size: 13px;
+   margin-top: 24px;
+   margin-left: 24px;
+   text-transform: uppercase;
+}
+
+.photography-title{
+   color: #1D1D1D;
+   font-size: 24px;
+   margin-top: 16px;
+   margin-left: 24px;
+}
+
+@media(max-width: 1200px){
+   .container{
+      width: 992px;
+   }
+   .header-grid{
+      grid-template-columns: repeat(3, 360px);
+      grid-template-rows: repeat(3, 540px);
+   }
+   .fantastic{
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+   }
+   .design{
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+   }
+   .website{
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+   }
+   .freelance{
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+   }
+   .photography{
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+   }
+}
+@media(max-width: 992px){
+   .container{
+      width: 768px;
+   }
+}
+@media(max-width: 768px){
+   .container{
+      width: 576px;
+   }
+   .header-grid{
+      grid-template-columns: repeat(2, 300px);
+   }
+}
+@media(max-width: 576px){
+   .container{
+      width: 320px;
+   }
+   .header-grid{
+      grid-template-rows: repeat(5, 540px);
+   }
+   .fantastic{
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+   }
+   .fantastic-date{
+      margin-top: 270px;
+   }
+   .design{
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+   }
+   .website{
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+   }
+   .freelance{
+      grid-row: 4 / 5;
+      grid-column: 1 / 2;
+   }
+   .photography{
+      grid-row: 5 / 6;
+      grid-column: 1 / 2;
+   }
+}
